@@ -1,3 +1,4 @@
+
 CREATE DATABASE DBOrdenesPago;
 GO
 
@@ -5,42 +6,48 @@ USE DBOrdenesPago;
 GO
 
 
--- TABLA: Clientes
-CREATE TABLE Clientes
+-- TABLA: Cliente
+CREATE TABLE Cliente
 (
     IdCliente INT IDENTITY(1,1) PRIMARY KEY,
     Nombre VARCHAR(200) NOT NULL,
     Documento VARCHAR(20) NOT NULL,
     Email VARCHAR(200) NULL,
-    Estado INT NOT NULL DEFAULT 1
+    Estado INT NOT NULL DEFAULT 1,
+    FechaRegistro DATETIME NOT NULL DEFAULT GETDATE(),
+    FechaActualizacion DATETIME NOT NULL DEFAULT GETDATE()
 );
 GO
 
 
--- TABLA: Productos
-CREATE TABLE Productos
+-- TABLA: Producto
+CREATE TABLE Producto
 (
     IdProducto INT IDENTITY(1,1) PRIMARY KEY,
     Nombre VARCHAR(200) NOT NULL,
     Precio DECIMAL(12,4) NOT NULL,
     Stock INT NOT NULL DEFAULT 0,
-    Estado INT NOT NULL DEFAULT 1
+    Estado INT NOT NULL DEFAULT 1,
+    FechaRegistro DATETIME NOT NULL DEFAULT GETDATE(),
+    FechaActualizacion DATETIME NOT NULL DEFAULT GETDATE()
 );
 GO
 
 -- TABLA: Ordenes
 
-CREATE TABLE Ordenes
+CREATE TABLE Orden
 (
     IdOrden INT IDENTITY(1,1) PRIMARY KEY,
     IdCliente INT NOT NULL,
-    Fecha DATETIME2 NOT NULL DEFAULT GETDATE(),
+    Fecha DATETIME NOT NULL DEFAULT GETDATE(),
     Total DECIMAL(10,2) NOT NULL DEFAULT 0,
     Estado VARCHAR(50) NOT NULL DEFAULT 'Pendiente',
+    FechaRegistro DATETIME NOT NULL DEFAULT GETDATE(),
+    FechaActualizacion DATETIME NOT NULL DEFAULT GETDATE()
 
-    CONSTRAINT FK_Ordenes_Clientes
+    CONSTRAINT FK_Ordenes_Cliente
         FOREIGN KEY (IdCliente)
-        REFERENCES Clientes(IdCliente),
+        REFERENCES Cliente(IdCliente),
 
     CONSTRAINT CK_Ordenes_Estado
         CHECK (Estado IN ('Pendiente', 'Pagada', 'Anulada'))
@@ -62,18 +69,18 @@ CREATE TABLE DetalleOrden
 
     CONSTRAINT FK_DetalleOrden_Ordenes
         FOREIGN KEY (IdOrden)
-        REFERENCES Ordenes(IdOrden),
+        REFERENCES Orden(IdOrden),
 
-    CONSTRAINT FK_DetalleOrden_Productos
+    CONSTRAINT FK_DetalleOrden_Producto
         FOREIGN KEY (IdProducto)
-        REFERENCES Productos(IdProducto)
+        REFERENCES Producto(IdProducto)
 );
 GO
 
 
--- DATOS DE PRUEBA: CLIENTES
+-- DATOS DE PRUEBA: CLIENTE
 
-INSERT INTO Clientes (Nombre, Documento, Email)
+INSERT INTO Cliente (Nombre, Documento, Email)
 VALUES
 ('Juan Pérez', '71234567', 'juan.perez@gmail.com'),
 ('Sandy Leiva', '77176466', 'sandy.leiva@gmail.com'),
@@ -83,9 +90,9 @@ VALUES
 GO
 
 
--- DATOS DE PRUEBA: PRODUCTOS
+-- DATOS DE PRUEBA: PRODUCTO
 
-INSERT INTO Productos (Nombre, Precio, Stock)
+INSERT INTO Producto (Nombre, Precio, Stock)
 VALUES
 ('Laptop Lenovo IdeaPad', 2500.00, 10),
 ('Mouse Logitech', 80.00, 25),
@@ -97,5 +104,5 @@ VALUES
 ('Memoria RAM 16GB', 280.00, 14);
 GO
 
-SELECT * FROM CLIENTES
-SELECT * FROM PRODUCTOS
+SELECT * FROM CLIENTE
+SELECT * FROM PRODUCTO

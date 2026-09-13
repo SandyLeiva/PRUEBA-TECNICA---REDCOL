@@ -1,0 +1,106 @@
+[
+  {
+    "ContainingType": "OrdenesPagoBackend.Controllers.ClienteController",
+    "Method": "ObtenerClientes",
+    "RelativePath": "api/clientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdenesPagoBackend.Controllers.OrdenController",
+    "Method": "ObtenerOrdenes",
+    "RelativePath": "api/orden",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdenesPagoBackend.Controllers.OrdenController",
+    "Method": "RegistrarOrden",
+    "RelativePath": "api/orden",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ordenRequest",
+        "Type": "OrdenesPagoBackend.Business.Request.OrdenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdenesPagoBackend.Controllers.OrdenController",
+    "Method": "ObtenerDetalleDeOrden",
+    "RelativePath": "api/orden/{idorden}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idorden",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdenesPagoBackend.Controllers.OrdenController",
+    "Method": "EditarEstadoOrden",
+    "RelativePath": "api/orden/estado/{idOrden}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idOrden",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estado",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdenesPagoBackend.Controllers.ProductoController",
+    "Method": "ObtenerProductos",
+    "RelativePath": "api/productos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdenesPagoBackend.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[OrdenesPagoBackend.WeatherForecast, OrdenesPagoBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
