@@ -1,0 +1,120 @@
+{
+  "info": {
+    "_postman_id": "1acaee94-5e54-4b8f-9096-09cb58713af8",
+    "name": "PRUEBA TECNICA - REDCOL",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "32203573",
+    "_collection_link": "https://go.postman.co/collection/32203573-1acaee94-5e54-4b8f-9096-09cb58713af8?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Orden",
+      "item": [
+        {
+          "name": "GetOrdenes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetOrdenDetalle",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CrearOrden",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"idCliente\": 1,\r\n    \"fecha\": \"2026-09-13T10:00:00\",\r\n    \"estado\": \"Pendiente\",\r\n    \"detalleOrdenRequest\": [\r\n        {\r\n            \"idProducto\": 1,\r\n            \"cantidad\": 2,\r\n            \"precio\": 50.00\r\n        },\r\n        {\r\n            \"idProducto\":2,\r\n            \"cantidad\": 1,\r\n            \"precio\": 80.00\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5207/api/orden",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5207",
+              "path": [
+                "api",
+                "orden"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "EditarEstado",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"estado\" : \"Pagada\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5207/api/orden/estado/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5207",
+              "path": [
+                "api",
+                "orden",
+                "estado",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "GetProductos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetClientes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}
