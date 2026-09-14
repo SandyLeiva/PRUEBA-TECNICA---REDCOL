@@ -1,5 +1,10 @@
 :root {
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
     sans-serif;
 
   color: #1e293b;
@@ -33,19 +38,12 @@
   --danger-bg: #fef2f2;
 
   --shadow-sm:
-    0 1px 2px rgba(15, 23, 42, 0.03),
-    0 2px 5px rgba(15, 23, 42, 0.04);
+    0 1px 2px rgba(15, 23, 42, 0.03), 0 2px 5px rgba(15, 23, 42, 0.04);
 
-  --shadow-md:
-    0 8px 25px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 8px 25px rgba(15, 23, 42, 0.06);
 
-  --shadow-indigo:
-    0 8px 20px rgba(79, 70, 229, 0.14);
+  --shadow-indigo: 0 8px 20px rgba(79, 70, 229, 0.14);
 }
-
-/* =========================================
-   RESET
-========================================= */
 
 * {
   box-sizing: border-box;
@@ -82,10 +80,6 @@ p {
   margin: 0;
 }
 
-/* =========================================
-   LAYOUT
-========================================= */
-
 .app-layout {
   min-height: 100vh;
   display: flex;
@@ -110,10 +104,6 @@ p {
     #f6f7fb;
 }
 
-/* =========================================
-   SIDEBAR
-========================================= */
-
 .sidebar {
   width: 240px;
   height: 100vh;
@@ -136,8 +126,6 @@ p {
   z-index: 20;
 }
 
-/* LOGO */
-
 .sidebar-logo {
   display: flex;
   align-items: center;
@@ -158,12 +146,7 @@ p {
 
   border-radius: 12px;
 
-  background:
-    linear-gradient(
-      135deg,
-      #4f46e5,
-      #6366f1
-    );
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
 
   color: white;
 
@@ -194,8 +177,6 @@ p {
   font-size: 11px;
 }
 
-/* TÍTULO DEL MENÚ */
-
 .sidebar-section-title {
   display: block;
 
@@ -208,8 +189,6 @@ p {
 
   letter-spacing: 0.08em;
 }
-
-/* NAVEGACIÓN */
 
 .sidebar-nav {
   display: flex;
@@ -406,20 +385,12 @@ p {
   font-size: 11px;
 }
 
-/* =========================================
-   ORDERS PAGE
-========================================= */
-
 .orders-page {
   width: 100%;
   min-height: calc(100vh - 68px);
 
   padding: 38px 42px 55px;
 }
-
-/* =========================================
-   HEADER
-========================================= */
 
 .orders-header {
   width: 100%;
@@ -478,10 +449,6 @@ p {
   font-size: 14px;
 }
 
-/* =========================================
-   BOTÓN PRINCIPAL
-========================================= */
-
 .btn-primary {
   min-height: 44px;
 
@@ -496,12 +463,7 @@ p {
   border: none;
   border-radius: 9px;
 
-  background:
-    linear-gradient(
-      135deg,
-      #4f46e5,
-      #5b52e8
-    );
+  background: linear-gradient(135deg, #4f46e5, #5b52e8);
 
   color: white;
 
@@ -517,12 +479,7 @@ p {
 }
 
 .btn-primary:hover {
-  background:
-    linear-gradient(
-      135deg,
-      #4338ca,
-      #4f46e5
-    );
+  background: linear-gradient(135deg, #4338ca, #4f46e5);
 
   box-shadow: 0 8px 18px rgba(79, 70, 229, 0.22);
 
@@ -536,10 +493,6 @@ p {
 .btn-primary span {
   font-size: 18px;
 }
-
-/* =========================================
-   RESUMEN
-========================================= */
 
 .orders-summary {
   width: 100%;
@@ -567,12 +520,7 @@ p {
 
   overflow: hidden;
 
-  background:
-    linear-gradient(
-      145deg,
-      #ffffff 0%,
-      #fbfbff 100%
-    );
+  background: linear-gradient(145deg, #ffffff 0%, #fbfbff 100%);
 
   border: 1px solid #e2e5ef;
 
@@ -679,11 +627,6 @@ p {
   white-space: nowrap;
 }
 
-/* =========================================
-   CARD ANULADAS
-========================================= */
-
-
 .summary-card.cancelled-card::after {
   background: rgba(220, 38, 38, 0.06);
 }
@@ -693,11 +636,6 @@ p {
   color: #dc2626;
   border-color: #fecaca;
 }
-
-
-/* =========================================
-   CARD DE TABLA
-========================================= */
 
 .orders-card {
   width: 100%;
@@ -726,12 +664,7 @@ p {
 
   gap: 20px;
 
-  background:
-    linear-gradient(
-      90deg,
-      #ffffff 0%,
-      #fbfbff 100%
-    );
+  background: linear-gradient(90deg, #ffffff 0%, #fbfbff 100%);
 
   border-bottom: 1px solid #e5e7ef;
 }
@@ -768,10 +701,6 @@ p {
   text-align: left;
 }
 
-/* DISTRIBUCIÓN DE COLUMNAS */
-
-/* DISTRIBUCIÓN DE COLUMNAS */
-
 .orders-table th:nth-child(1),
 .orders-table td:nth-child(1) {
   width: 30%;
@@ -797,8 +726,6 @@ p {
   width: 18%;
 }
 
-/* CABECERA */
-
 .orders-table th {
   padding: 14px 16px;
 
@@ -814,8 +741,6 @@ p {
   letter-spacing: 0.045em;
 }
 
-/* FILAS */
-
 .orders-table td {
   padding: 16px 16px;
 
@@ -829,13 +754,10 @@ p {
   transition: background 0.15s ease;
 }
 
-/* MÁS ESPACIO EN LOS EXTREMOS */
-
 .orders-table th:first-child,
 .orders-table td:first-child {
   padding-left: 28px;
 }
-
 
 .orders-table tbody tr:hover td {
   background: #fafaff;
@@ -855,7 +777,6 @@ p {
   text-align: center;
 }
 
-
 .orders-table th:nth-child(4),
 .orders-table td:nth-child(4) {
   text-align: left;
@@ -870,10 +791,6 @@ p {
 .orders-table td:first-child {
   padding-left: 28px;
 }
-
-/* =========================================
-   CLIENTE
-========================================= */
 
 .client-cell {
   display: flex;
@@ -899,10 +816,6 @@ p {
 
   white-space: nowrap;
 }
-
-/* =========================================
-   ESTADOS
-========================================= */
 
 .status-badge {
   width: fit-content;
@@ -1479,11 +1392,7 @@ p {
 
   gap: 20px;
 
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    #fbfbff 100%
-  );
+  background: linear-gradient(90deg, #ffffff 0%, #fbfbff 100%);
 
   border-bottom: 1px solid #e5e7ef;
 }
@@ -1693,8 +1602,6 @@ p {
   font-size: 12px;
   font-weight: 500;
 }
-
-/* PRODUCTOS */
 
 .detail-products-title {
   display: flex;
@@ -2004,11 +1911,7 @@ p {
 
   border-bottom: 1px solid #e5e7ef;
 
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    #fbfbff 100%
-  );
+  background: linear-gradient(90deg, #ffffff 0%, #fbfbff 100%);
 }
 
 .create-card-header h2 {
@@ -2077,8 +1980,7 @@ p {
 .create-field select:focus {
   border-color: #818cf8;
 
-  box-shadow:
-    0 0 0 3px rgba(79, 70, 229, 0.08);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.08);
 }
 
 /* =========================================
@@ -2114,8 +2016,7 @@ p {
 .product-search-input:focus-within {
   border-color: #818cf8;
 
-  box-shadow:
-    0 0 0 3px rgba(79, 70, 229, 0.08);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.08);
 }
 
 .product-search-input svg {
@@ -2157,8 +2058,7 @@ p {
 
   background: #ffffff;
 
-  box-shadow:
-    0 10px 30px rgba(15, 23, 42, 0.1);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
 }
 
 .product-search-item {
@@ -2790,11 +2690,7 @@ p {
 
   border-bottom: 1px solid #e5e7ef;
 
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    #fbfbff 100%
-  );
+  background: linear-gradient(90deg, #ffffff 0%, #fbfbff 100%);
 }
 
 .clients-card-header h2 {
@@ -2840,8 +2736,7 @@ p {
 .clients-search:focus-within {
   border-color: #818cf8;
 
-  box-shadow:
-    0 0 0 3px rgba(79, 70, 229, 0.08);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.08);
 }
 
 .clients-search svg {
@@ -3091,11 +2986,7 @@ p {
 
   border-bottom: 1px solid #e5e7ef;
 
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    #fbfbff 100%
-  );
+  background: linear-gradient(90deg, #ffffff 0%, #fbfbff 100%);
 }
 
 .products-card-header h2 {
@@ -3112,8 +3003,6 @@ p {
 
   font-size: 12px;
 }
-
-/* BUSCADOR */
 
 .products-search {
   width: 280px;
@@ -3141,8 +3030,7 @@ p {
 .products-search:focus-within {
   border-color: #818cf8;
 
-  box-shadow:
-    0 0 0 3px rgba(79, 70, 229, 0.08);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.08);
 }
 
 .products-search svg {
@@ -3243,15 +3131,11 @@ p {
   font-weight: 650;
 }
 
-/* DATOS */
-
 .product-price {
   color: #1e293b;
 
   font-weight: 650;
 }
-
-/* EMPTY */
 
 .products-empty {
   min-height: 240px;
@@ -3282,8 +3166,6 @@ p {
   font-size: 12px;
 }
 
-/* STOCK */
-
 .stock-badge {
   width: fit-content;
 
@@ -3298,28 +3180,18 @@ p {
   font-weight: 650;
 }
 
-/* MENOS DE 10 */
-
 .stock-low {
   background: #fef2f2;
   color: #dc2626;
 }
-
-/* DE 10 A 14 */
-
 .stock-medium {
   background: #fff7e6;
   color: #d97706;
 }
-
-/* 15 O MÁS */
-
 .stock-good {
   background: #ecfdf3;
   color: #16a34a;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 750px) {
   .products-page {
@@ -3345,8 +3217,6 @@ p {
     min-width: 600px;
   }
 }
-
-/* PRODUCTOS SIN STOCK */
 
 .product-search-item.product-out-of-stock {
   background: #f8fafc;

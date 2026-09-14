@@ -1,15 +1,7 @@
 import { useEffect, useState } from "react";
-
 import { obtenerClientes } from "../../services/clienteService";
-
 import type { Cliente } from "../../models/Cliente";
-
-import {
-  Users,
-  Search,
-  ContactRound,
-} from "lucide-react";
-
+import { Users, Search, ContactRound } from "lucide-react";
 import Loading from "../../components/Loading";
 import FloatingAlert from "../../components/FloatingAlert";
 
@@ -17,8 +9,7 @@ function ClientsPage() {
   const [clientes, setClientes] = useState<Cliente[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>("");
-  const [cargaCorrecta, setCargaCorrecta] =
-    useState<boolean>(false);
+  const [cargaCorrecta, setCargaCorrecta] = useState<boolean>(false);
 
   const [busqueda, setBusqueda] = useState<string>("");
 
@@ -38,16 +29,10 @@ function ClientsPage() {
         setClientes(response.data);
         setCargaCorrecta(true);
       } else {
-        setError(
-          response.message ||
-            "No se pudieron obtener los clientes",
-        );
+        setError(response.message || "No se pudieron obtener los clientes");
       }
     } catch (error: any) {
-      console.error(
-        "Error al obtener clientes:",
-        error,
-      );
+      console.error("Error al obtener clientes:", error);
 
       const mensaje =
         error.response?.data?.message ||
@@ -66,29 +51,21 @@ function ClientsPage() {
       .toLowerCase()
       .trim();
 
-  const clientesFiltrados = clientes.filter(
-    (cliente) => {
-      const termino = normalizarTexto(busqueda);
+  const clientesFiltrados = clientes.filter((cliente) => {
+    const termino = normalizarTexto(busqueda);
 
-      const nombre = normalizarTexto(
-        cliente.nombre || "",
-      );
+    const nombre = normalizarTexto(cliente.nombre || "");
 
-      const documento = String(
-        cliente.documento || "",
-      ).toLowerCase();
+    const documento = String(cliente.documento || "").toLowerCase();
 
-      const email = normalizarTexto(
-        cliente.email || "",
-      );
+    const email = normalizarTexto(cliente.email || "");
 
-      return (
-        nombre.includes(termino) ||
-        documento.includes(termino) ||
-        email.includes(termino)
-      );
-    },
-  );
+    return (
+      nombre.includes(termino) ||
+      documento.includes(termino) ||
+      email.includes(termino)
+    );
+  });
 
   if (loading) {
     return (
@@ -100,10 +77,7 @@ function ClientsPage() {
 
   return (
     <div className="clients-page">
-      <FloatingAlert
-        message={error}
-        onClose={() => setError("")}
-      />
+      <FloatingAlert message={error} onClose={() => setError("")} />
 
       {/* HEADER */}
 
@@ -116,9 +90,7 @@ function ClientsPage() {
           <div>
             <h1>Clientes</h1>
 
-            <p>
-              Consulta los clientes registrados.
-            </p>
+            <p>Consulta los clientes registrados.</p>
           </div>
         </div>
       </div>
@@ -145,9 +117,7 @@ function ClientsPage() {
               <input
                 type="text"
                 value={busqueda}
-                onChange={(e) =>
-                  setBusqueda(e.target.value)
-                }
+                onChange={(e) => setBusqueda(e.target.value)}
                 placeholder="Buscar cliente..."
               />
             </div>
@@ -157,27 +127,17 @@ function ClientsPage() {
             <div className="clients-empty">
               <ContactRound size={30} />
 
-              <strong>
-                No hay clientes registrados
-              </strong>
+              <strong>No hay clientes registrados</strong>
 
-              <span>
-                Los clientes registrados aparecerán
-                aquí.
-              </span>
+              <span>Los clientes registrados aparecerán aquí.</span>
             </div>
           ) : clientesFiltrados.length === 0 ? (
             <div className="clients-empty">
               <Search size={28} />
 
-              <strong>
-                No encontramos resultados
-              </strong>
+              <strong>No encontramos resultados</strong>
 
-              <span>
-                Prueba buscando por nombre, documento
-                o email.
-              </span>
+              <span>Prueba buscando por nombre, documento o email.</span>
             </div>
           ) : (
             <div className="clients-table-container">
@@ -192,33 +152,25 @@ function ClientsPage() {
                 </thead>
 
                 <tbody>
-                  {clientesFiltrados.map(
-                    (cliente) => (
-                      <tr key={cliente.idCliente}>
-                        <td>
-                          <span className="client-id">
-                            #{cliente.idCliente}
-                          </span>
-                        </td>
+                  {clientesFiltrados.map((cliente) => (
+                    <tr key={cliente.idCliente}>
+                      <td>
+                        <span className="client-id">#{cliente.idCliente}</span>
+                      </td>
 
-                        <td>
-                          {cliente.documento}
-                        </td>
+                      <td>{cliente.documento}</td>
 
-                        <td>
-                          <strong>
-                            {cliente.nombre}
-                          </strong>
-                        </td>
+                      <td>
+                        <strong>{cliente.nombre}</strong>
+                      </td>
 
-                        <td>
-                          <span className="client-email">
-                            {cliente.email || "-"}
-                          </span>
-                        </td>
-                      </tr>
-                    ),
-                  )}
+                      <td>
+                        <span className="client-email">
+                          {cliente.email || "-"}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>

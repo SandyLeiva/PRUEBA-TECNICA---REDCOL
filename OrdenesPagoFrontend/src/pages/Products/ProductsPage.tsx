@@ -1,15 +1,7 @@
 import { useEffect, useState } from "react";
-
 import { obtenerProductos } from "../../services/productoService";
-
 import type { Producto } from "../../models/Producto";
-
-import {
-  Package,
-  Search,
-  PackageSearch,
-} from "lucide-react";
-
+import { Package, Search, PackageSearch } from "lucide-react";
 import Loading from "../../components/Loading";
 import FloatingAlert from "../../components/FloatingAlert";
 
@@ -18,8 +10,7 @@ function ProductsPage() {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>("");
 
-  const [cargaCorrecta, setCargaCorrecta] =
-    useState<boolean>(false);
+  const [cargaCorrecta, setCargaCorrecta] = useState<boolean>(false);
 
   const [busqueda, setBusqueda] = useState<string>("");
 
@@ -39,16 +30,10 @@ function ProductsPage() {
         setProductos(response.data);
         setCargaCorrecta(true);
       } else {
-        setError(
-          response.message ||
-            "No se pudieron obtener los productos",
-        );
+        setError(response.message || "No se pudieron obtener los productos");
       }
     } catch (error: any) {
-      console.error(
-        "Error al obtener productos:",
-        error,
-      );
+      console.error("Error al obtener productos:", error);
 
       const mensaje =
         error.response?.data?.message ||
@@ -67,27 +52,21 @@ function ProductsPage() {
       .toLowerCase()
       .trim();
 
-  const productosFiltrados = productos.filter(
-    (producto) => {
-      const termino = normalizarTexto(busqueda);
+  const productosFiltrados = productos.filter((producto) => {
+    const termino = normalizarTexto(busqueda);
 
-      const nombre = normalizarTexto(
-        producto.nombre || "",
-      );
+    const nombre = normalizarTexto(producto.nombre || "");
 
-      return nombre.includes(termino);
-    },
-  );
+    return nombre.includes(termino);
+  });
 
   const obtenerClaseStock = (stock: number) => {
     if (stock < 10) {
       return "stock-badge stock-low";
     }
-
     if (stock < 15) {
       return "stock-badge stock-medium";
     }
-
     return "stock-badge stock-good";
   };
 
@@ -101,30 +80,19 @@ function ProductsPage() {
 
   return (
     <div className="products-page">
-      <FloatingAlert
-        message={error}
-        onClose={() => setError("")}
-      />
-
-      {/* HEADER */}
+      <FloatingAlert message={error} onClose={() => setError("")} />
 
       <div className="products-header">
         <div className="page-title-row">
           <div className="page-title-icon">
             <Package size={25} />
           </div>
-
           <div>
             <h1>Productos</h1>
-
-            <p>
-              Consulta los productos registrados.
-            </p>
+            <p>Consulta los productos registrados.</p>
           </div>
         </div>
       </div>
-
-      {/* CONTENIDO */}
 
       {cargaCorrecta && (
         <div className="products-card">
@@ -146,9 +114,7 @@ function ProductsPage() {
               <input
                 type="text"
                 value={busqueda}
-                onChange={(e) =>
-                  setBusqueda(e.target.value)
-                }
+                onChange={(e) => setBusqueda(e.target.value)}
                 placeholder="Buscar producto..."
               />
             </div>
@@ -158,26 +124,14 @@ function ProductsPage() {
             <div className="products-empty">
               <PackageSearch size={30} />
 
-              <strong>
-                No hay productos registrados
-              </strong>
-
-              <span>
-                Los productos registrados aparecerán
-                aquí.
-              </span>
+              <strong>No hay productos registrados</strong>
+              <span>Los productos registrados aparecerán aquí.</span>
             </div>
           ) : productosFiltrados.length === 0 ? (
             <div className="products-empty">
               <Search size={28} />
-
-              <strong>
-                No encontramos resultados
-              </strong>
-
-              <span>
-                Prueba buscando por nombre.
-              </span>
+              <strong>No encontramos resultados</strong>
+              <span>Prueba buscando por nombre.</span>
             </div>
           ) : (
             <div className="products-table-container">
@@ -191,36 +145,25 @@ function ProductsPage() {
                 </thead>
 
                 <tbody>
-                  {productosFiltrados.map(
-                    (producto) => (
-                      <tr key={producto.idProducto}>
-                        <td>
-                          <strong>
-                            {producto.nombre}
-                          </strong>
-                        </td>
+                  {productosFiltrados.map((producto) => (
+                    <tr key={producto.idProducto}>
+                      <td>
+                        <strong>{producto.nombre}</strong>
+                      </td>
 
-                        <td>
-                          <span className="product-price">
-                            S/{" "}
-                            {Number(
-                              producto.precio,
-                            ).toFixed(2)}
-                          </span>
-                        </td>
+                      <td>
+                        <span className="product-price">
+                          S/ {Number(producto.precio).toFixed(2)}
+                        </span>
+                      </td>
 
-                        <td>
-                          <span
-                            className={obtenerClaseStock(
-                              producto.stock,
-                            )}
-                          >
-                            {producto.stock} unidades
-                          </span>
-                        </td>
-                      </tr>
-                    ),
-                  )}
+                      <td>
+                        <span className={obtenerClaseStock(producto.stock)}>
+                          {producto.stock} unidades
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>

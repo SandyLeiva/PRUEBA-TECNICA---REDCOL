@@ -1,10 +1,5 @@
 import { useEffect } from "react";
-import {
-  CircleAlert,
-  CircleCheck,
-  TriangleAlert,
-  X,
-} from "lucide-react";
+import { CircleAlert, CircleCheck, TriangleAlert, X } from "lucide-react";
 
 type FloatingAlertProps = {
   message: string;
@@ -63,9 +58,7 @@ function FloatingAlert({
 
   return (
     <div className={`floating-alert ${type}`}>
-      <div className="floating-alert-icon">
-        {obtenerIcono()}
-      </div>
+      <div className="floating-alert-icon">{obtenerIcono()}</div>
 
       <div className="floating-alert-content">
         <strong>{obtenerTitulo()}</strong>

@@ -1,75 +1,124 @@
-# React + TypeScript + Vite
+# Frontend - Sistema de Órdenes de Pago
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend desarrollado en React + TypeScript para la gestión de órdenes de pago.
 
-Currently, two official plugins are available:
+La aplicación consume la API del Backend y permite consultar clientes, productos y órdenes, además de registrar nuevas órdenes y actualizar su estado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologías utilizadas
 
-## React Compiler
+- React
+- TypeScript
+- Vite
+- Axios
+- React Router
+- Lucide React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Listado de órdenes.
+- Búsqueda de órdenes.
+- Consulta del detalle de una orden.
+- Registro de nuevas órdenes.
+- Selección de cliente.
+- Selección de productos.
+- Control de cantidad por producto.
+- Cálculo automático de subtotales.
+- Cálculo automático del total de la orden.
+- Actualización del estado de la orden.
+- Listado y búsqueda de clientes.
+- Listado y búsqueda de productos.
+- Visualización de precio y stock.
+- Productos sin stock deshabilitados para selección.
+- Manejo de errores mediante alertas.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Requisitos
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Para ejecutar el proyecto se necesita:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Node.js
+- npm
+- Backend de la aplicación en ejecución
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Instalación
 
+Abrir una terminal dentro de la carpeta:
+
+```bash
+cd OrdenesPagoFrontend
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Instalar las dependencias:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
 ```
+
+## Ejecución
+
+Ejecutar:
+
+```bash
+npm run dev
+```
+
+Vite mostrará en la terminal la dirección local de la aplicación.
+
+Por ejemplo:
+
+```text
+http://localhost:5173
+```
+
+## Conexión con el Backend
+
+El Frontend consume la API mediante los archivos ubicados en:
+
+```text
+src/services
+```
+
+La URL utilizada para conectarse al Backend debe coincidir con la dirección en la que se está ejecutando la API.
+
+Si el Backend se ejecuta en otra dirección o puerto, se debe actualizar la configuración correspondiente en los servicios del Frontend.
+
+## Generar versión de producción
+
+Para generar la aplicación para producción:
+
+```bash
+npm run build
+```
+
+Vite generará la carpeta:
+
+```text
+dist
+```
+
+Esta carpeta contiene los archivos listos para publicar en un servidor web.
+
+## Estructura principal
+
+```text
+src/
+├── components/
+├── models/
+├── pages/
+├── services/
+├── App.tsx
+├── App.css
+└── main.tsx
+```
+
+## Carpetas principales
+
+- `components`: componentes reutilizables.
+- `models`: modelos e interfaces de TypeScript.
+- `pages`: pantallas de la aplicación.
+- `services`: archivos encargados de consumir la API.
+- `App.tsx`: configuración principal de la aplicación.
+- `App.css`: estilos principales.
+- `main.tsx`: punto de entrada del proyecto.
+
+## Notas
+Los clientes y productos ya se encuentran registrados en la base de datos.

@@ -1,10 +1,5 @@
 import { NavLink } from "react-router-dom";
-import {
-  ReceiptText,
-  Users,
-  Package,
-  WalletCards,
-} from "lucide-react";
+import { ReceiptText, Users, Package, WalletCards } from "lucide-react";
 
 function Sidebar() {
   return (

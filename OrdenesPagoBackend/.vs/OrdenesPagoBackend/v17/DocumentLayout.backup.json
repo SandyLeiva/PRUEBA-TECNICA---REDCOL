@@ -150,8 +150,7 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Business\\Models\\OrdenDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T23:04:15.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T23:04:15.448Z"
             },
             {
               "$type": "Document",
@@ -159,9 +158,9 @@
               "Title": "OrdenBusinessLogic.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\OrdenBusinessLogic.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\OrdenBusinessLogic.cs",
-              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\OrdenBusinessLogic.cs*",
-              "RelativeToolTip": "OrdenesPagoBackend\\Business\\OrdenBusinessLogic.cs*",
-              "ViewState": "AgIAAM8AAAAAAAAAAAAwwOIAAAAZAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\OrdenBusinessLogic.cs",
+              "RelativeToolTip": "OrdenesPagoBackend\\Business\\OrdenBusinessLogic.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-13T16:48:40.912Z",
               "EditorCaption": ""
@@ -172,12 +171,11 @@
               "Title": "OrdenValidator.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Validator\\OrdenValidator.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\Validator\\OrdenValidator.cs",
-              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Validator\\OrdenValidator.cs*",
-              "RelativeToolTip": "OrdenesPagoBackend\\Business\\Validator\\OrdenValidator.cs*",
+              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Validator\\OrdenValidator.cs",
+              "RelativeToolTip": "OrdenesPagoBackend\\Business\\Validator\\OrdenValidator.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAqwIoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T14:48:38.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T14:48:38.114Z"
             },
             {
               "$type": "Document",
@@ -189,8 +187,7 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Business\\Request\\OrdenRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T16:53:16.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T16:53:16.619Z"
             },
             {
               "$type": "Document",
@@ -202,8 +199,7 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Business\\Models\\DetalleOrdenDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T23:04:10.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T23:04:10.81Z"
             },
             {
               "$type": "Document",
@@ -215,8 +211,7 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Business\\Request\\DetalleOrdenRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T16:53:45.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T16:53:45.651Z"
             },
             {
               "$type": "Document",
@@ -228,8 +223,7 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Program.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAAADsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T15:27:48.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T15:27:48.363Z"
             },
             {
               "$type": "Document",
@@ -241,8 +235,7 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Business\\Request\\EstadoOrdenRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T16:53:38.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T16:53:38.948Z"
             },
             {
               "$type": "Document",
@@ -254,8 +247,7 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Controllers\\OrdenController.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAIwDMAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T15:34:20.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T15:34:20.785Z"
             },
             {
               "$type": "Document",
@@ -267,8 +259,7 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Business\\Validator\\EditarEstadoOrdenValidator.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAswC0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T18:37:04.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T18:37:04.719Z"
             },
             {
               "$type": "Document",

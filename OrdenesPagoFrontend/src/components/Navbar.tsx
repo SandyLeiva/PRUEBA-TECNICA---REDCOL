@@ -8,7 +8,6 @@ function Navbar() {
       </div>
 
       <div className="navbar-actions">
-        
         <div className="navbar-user">
           <div className="navbar-avatar">S</div>
 

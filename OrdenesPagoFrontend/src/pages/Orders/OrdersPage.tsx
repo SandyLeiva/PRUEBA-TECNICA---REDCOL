@@ -24,8 +24,7 @@ function OrdersPage() {
   const [ordenes, setOrdenes] = useState<Orden[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>("");
-  const [cargaCorrecta, setCargaCorrecta] =
-    useState<boolean>(false);
+  const [cargaCorrecta, setCargaCorrecta] = useState<boolean>(false);
 
   const [busqueda, setBusqueda] = useState<string>("");
 
@@ -45,16 +44,10 @@ function OrdersPage() {
         setOrdenes(response.data);
         setCargaCorrecta(true);
       } else {
-        setError(
-          response.message ||
-            "No se pudieron obtener las órdenes",
-        );
+        setError(response.message || "No se pudieron obtener las órdenes");
       }
     } catch (error: any) {
-      console.error(
-        "Error al obtener las órdenes:",
-        error,
-      );
+      console.error("Error al obtener las órdenes:", error);
 
       const mensaje =
         error.response?.data?.message ||
@@ -78,36 +71,29 @@ function OrdersPage() {
     switch (estado.toUpperCase()) {
       case "PENDIENTE":
         return "status-badge pending";
-
       case "PAGADA":
         return "status-badge paid";
-
       case "ANULADA":
         return "status-badge cancelled";
-
       default:
         return "status-badge";
     }
   };
 
   const pendientes = ordenes.filter(
-    (orden) =>
-      orden.estado.toUpperCase() === "PENDIENTE",
+    (orden) => orden.estado.toUpperCase() === "PENDIENTE",
   ).length;
 
   const pagadas = ordenes.filter(
-    (orden) =>
-      orden.estado.toUpperCase() === "PAGADA",
+    (orden) => orden.estado.toUpperCase() === "PAGADA",
   ).length;
 
   const anuladas = ordenes.filter(
-    (orden) =>
-      orden.estado.toUpperCase() === "ANULADA",
+    (orden) => orden.estado.toUpperCase() === "ANULADA",
   ).length;
 
   const montoTotal = ordenes.reduce(
-    (total, orden) =>
-      total + Number(orden.total),
+    (total, orden) => total + Number(orden.total),
     0,
   );
 
@@ -118,70 +104,38 @@ function OrdersPage() {
       .toLowerCase()
       .trim();
 
-  const ordenesFiltradas = ordenes.filter(
-    (orden) => {
-      const termino = normalizarTexto(busqueda);
+  const ordenesFiltradas = ordenes.filter((orden) => {
+    const termino = normalizarTexto(busqueda);
 
-      const nombre = normalizarTexto(
-        orden.clienteNombre || "",
-      );
+    const nombre = normalizarTexto(orden.clienteNombre || "");
 
-      const documento = String(
-        orden.documento || "",
-      ).toLowerCase();
+    const documento = String(orden.documento || "").toLowerCase();
 
-      return (
-        nombre.includes(termino) ||
-        documento.includes(termino)
-      );
-    },
-  );
+    return nombre.includes(termino) || documento.includes(termino);
+  });
 
   return (
     <div className="orders-page">
-      {/* ALERTA */}
-
-      <FloatingAlert
-        message={error}
-        onClose={() => setError("")}
-      />
-
-      {/* HEADER */}
+      <FloatingAlert message={error} onClose={() => setError("")} />
 
       <div className="orders-header">
         <div className="page-title-row">
           <div>
             <h1>Órdenes de pago</h1>
-
-            <p>
-              Consulta y administra las órdenes
-              registradas.
-            </p>
+            <p>Consulta y administra las órdenes registradas.</p>
           </div>
         </div>
 
-        <button
-          type="button"
-          className="btn-primary"
-          onClick={nuevaOrden}
-        >
+        <button type="button" className="btn-primary" onClick={nuevaOrden}>
           <Plus size={18} />
           Nueva orden
         </button>
       </div>
 
-      {/* LOADING */}
-
-      {loading && (
-        <Loading message="Cargando órdenes..." />
-      )}
-
-      {/* CONTENIDO */}
+      {loading && <Loading message="Cargando órdenes..." />}
 
       {!loading && cargaCorrecta && (
         <>
-          {/* RESUMEN */}
-
           <div className="orders-summary">
             <div className="summary-card">
               <div className="summary-icon">
@@ -235,14 +189,10 @@ function OrdersPage() {
               <div>
                 <span>Monto total</span>
 
-                <strong>
-                  S/ {montoTotal.toFixed(2)}
-                </strong>
+                <strong>S/ {montoTotal.toFixed(2)}</strong>
               </div>
             </div>
           </div>
-
-          {/* LISTADO */}
 
           <div className="orders-card">
             <div className="orders-card-header">
@@ -253,9 +203,7 @@ function OrdersPage() {
                   {busqueda
                     ? `${ordenesFiltradas.length} resultados encontrados`
                     : `${ordenes.length} ${
-                        ordenes.length === 1
-                          ? "registro"
-                          : "registros"
+                        ordenes.length === 1 ? "registro" : "registros"
                       }`}
                 </span>
               </div>
@@ -267,9 +215,7 @@ function OrdersPage() {
                   type="text"
                   placeholder="Buscar por documento o cliente..."
                   value={busqueda}
-                  onChange={(e) =>
-                    setBusqueda(e.target.value)
-                  }
+                  onChange={(e) => setBusqueda(e.target.value)}
                   aria-label="Buscar órdenes por documento o cliente"
                 />
               </div>
@@ -281,13 +227,9 @@ function OrdersPage() {
                   <Plus size={22} />
                 </div>
 
-                <strong>
-                  No hay órdenes registradas
-                </strong>
+                <strong>No hay órdenes registradas</strong>
 
-                <span>
-                  Crea una nueva orden para comenzar.
-                </span>
+                <span>Crea una nueva orden para comenzar.</span>
 
                 <button
                   type="button"
@@ -302,14 +244,9 @@ function OrdersPage() {
               <div className="search-empty-state">
                 <Search size={28} />
 
-                <strong>
-                  No encontramos resultados
-                </strong>
+                <strong>No encontramos resultados</strong>
 
-                <span>
-                  No hay órdenes que coincidan con "
-                  {busqueda}".
-                </span>
+                <span>No hay órdenes que coincidan con "{busqueda}".</span>
 
                 <button
                   type="button"
@@ -333,72 +270,51 @@ function OrdersPage() {
                   </thead>
 
                   <tbody>
-                    {ordenesFiltradas.map(
-                      (orden) => (
-                        <tr key={orden.idOrden}>
-                          <td>
-                            <div className="client-cell">
-                              <strong>
-                                {orden.documento} -{" "}
-                                {orden.clienteNombre}
-                              </strong>
-                            </div>
-                          </td>
-
-                          <td>
-                            <span className="date-text">
-                              {new Date(
-                                orden.fecha,
-                              ).toLocaleDateString(
-                                "es-PE",
-                                {
-                                  day: "2-digit",
-                                  month: "2-digit",
-                                  year: "numeric",
-                                },
-                              )}
-                            </span>
-                          </td>
-
-                          <td>
-                            <strong className="amount-text">
-                              S/{" "}
-                              {Number(
-                                orden.total,
-                              ).toFixed(2)}
+                    {ordenesFiltradas.map((orden) => (
+                      <tr key={orden.idOrden}>
+                        <td>
+                          <div className="client-cell">
+                            <strong>
+                              {orden.documento} - {orden.clienteNombre}
                             </strong>
-                          </td>
+                          </div>
+                        </td>
 
-                          <td>
-                            <span
-                              className={obtenerClaseEstado(
-                                orden.estado,
-                              )}
-                            >
-                              <span className="status-dot"></span>
-                              {orden.estado}
-                            </span>
-                          </td>
+                        <td>
+                          <span className="date-text">
+                            {new Date(orden.fecha).toLocaleDateString("es-PE", {
+                              day: "2-digit",
+                              month: "2-digit",
+                              year: "numeric",
+                            })}
+                          </span>
+                        </td>
 
-                          <td>
-                            <button
-                              type="button"
-                              className="btn-detail"
-                              onClick={() =>
-                                verDetalle(
-                                  orden.idOrden,
-                                )
-                              }
-                            >
-                              Ver detalle
-                              <ArrowRight
-                                size={15}
-                              />
-                            </button>
-                          </td>
-                        </tr>
-                      ),
-                    )}
+                        <td>
+                          <strong className="amount-text">
+                            S/ {Number(orden.total).toFixed(2)}
+                          </strong>
+                        </td>
+
+                        <td>
+                          <span className={obtenerClaseEstado(orden.estado)}>
+                            <span className="status-dot"></span>
+                            {orden.estado}
+                          </span>
+                        </td>
+
+                        <td>
+                          <button
+                            type="button"
+                            className="btn-detail"
+                            onClick={() => verDetalle(orden.idOrden)}
+                          >
+                            Ver detalle
+                            <ArrowRight size={15} />
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
                   </tbody>
                 </table>
               </div>
