@@ -65,9 +65,9 @@
         "IsRequired": true
       },
       {
-        "Name": "estado",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "estadoOrdenRequest",
+        "Type": "OrdenesPagoBackend.Business.Request.EstadoOrdenRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

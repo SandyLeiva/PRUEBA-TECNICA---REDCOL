@@ -16,14 +16,12 @@ namespace OrdenesPagoBackend.Business.Validator
 
         public Response<OrdenDto?>? ValidarOrden(OrdenRequest ordenRequest)
         {
-            DateTime fecha;
-
             if (!DateTime.TryParseExact(
                     ordenRequest.Fecha,
                     "yyyy-MM-ddTHH:mm:ss",
                     CultureInfo.InvariantCulture,
                     DateTimeStyles.None,
-                    out fecha))
+                    out _))
             {
                 return new Response<OrdenDto?>
                 {
@@ -62,8 +60,8 @@ namespace OrdenesPagoBackend.Business.Validator
             }
 
             if (ordenRequest.Estado != "Pendiente" &&
-                 ordenRequest.Estado != "Anulada" &&
-                 ordenRequest.Estado != "Pagada")
+                ordenRequest.Estado != "Anulada" &&
+                ordenRequest.Estado != "Pagada")
             {
                 return new Response<OrdenDto?>
                 {
@@ -76,21 +74,6 @@ namespace OrdenesPagoBackend.Business.Validator
 
             foreach (var detalle in ordenRequest.DetalleOrdenRequest)
             {
-                var producto = _repository.Producto
-                    .FindByCondition(p => p.IdProducto == detalle.IdProducto)
-                    .FirstOrDefault();
-
-                if (producto == null)
-                {
-                    return new Response<OrdenDto?>
-                    {
-                        Status = 404,
-                        Message = "El producto no existe",
-                        Data = null,
-                        Details = $"No se encontró el producto con ID {detalle.IdProducto}"
-                    };
-                }
-
                 if (detalle.Cantidad <= 0)
                 {
                     return new Response<OrdenDto?>
@@ -98,7 +81,7 @@ namespace OrdenesPagoBackend.Business.Validator
                         Status = 400,
                         Message = "Cantidad inválida",
                         Data = null,
-                        Details = $"La cantidad del producto {detalle.IdProducto} debe ser mayor a cero"
+                        Details = "La cantidad de los productos debe ser mayor a cero"
                     };
                 }
 
@@ -109,11 +92,48 @@ namespace OrdenesPagoBackend.Business.Validator
                         Status = 400,
                         Message = "Precio inválido",
                         Data = null,
-                        Details = $"El precio del producto {detalle.IdProducto} no puede ser negativo"
+                        Details = "El precio de los productos no puede ser negativo"
                     };
                 }
             }
 
+            var productosSolicitados = ordenRequest.DetalleOrdenRequest
+                .GroupBy(d => d.IdProducto)
+                .Select(g => new
+                {
+                    IdProducto = g.Key,
+                    Cantidad = g.Sum(d => d.Cantidad)
+                })
+                .ToList();
+
+            foreach (var item in productosSolicitados)
+            {
+                var producto = _repository.Producto
+                    .FindByCondition(p => p.IdProducto == item.IdProducto)
+                    .FirstOrDefault();
+
+                if (producto == null)
+                {
+                    return new Response<OrdenDto?>
+                    {
+                        Status = 404,
+                        Message = "El producto no existe",
+                        Data = null,
+                        Details = $"No se encontró el producto con ID {item.IdProducto}"
+                    };
+                }
+
+                if (producto.Stock < item.Cantidad)
+                {
+                    return new Response<OrdenDto?>
+                    {
+                        Status = 400,
+                        Message = $"Stock insuficiente para {producto.Nombre}",
+                        Data = null,
+                        Details = $"Stock disponible: {producto.Stock}. Cantidad solicitada: {item.Cantidad}"
+                    };
+                }
+            }
 
             return null;
         }

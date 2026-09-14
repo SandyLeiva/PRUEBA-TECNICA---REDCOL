@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrdenesPagoBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37a0768feb06c2d3e9dd437898f4398a649c7167")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4104a51a01ddc75d2786f5a8b519d9ca77c8455e")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrdenesPagoBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrdenesPagoBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

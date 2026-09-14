@@ -49,10 +49,10 @@ namespace OrdenesPagoBackend.Controllers
 
 
         [HttpPut("estado/{idOrden}")]
-        public IActionResult EditarEstadoOrden(int idOrden, string estado)
+        public IActionResult EditarEstadoOrden(int idOrden, EstadoOrdenRequest estadoOrdenRequest)
         {
 
-            var response = _ordenes.EditarEstadoOrden(idOrden, estado);
+            var response = _ordenes.EditarEstadoOrden(idOrden, estadoOrdenRequest);
 
             return Ok(response);
 

@@ -12,6 +12,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 
+//CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("ReactPolicy", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:5173")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 // Conexion
 builder.Services.AddDbContext<RepositoryContext>(options =>
     options.UseSqlServer(
@@ -44,6 +56,10 @@ builder.Services.AddScoped<
     OrdenValidator
 >();
 
+builder.Services.AddScoped<
+    EditarEstadoOrdenValidator
+>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -56,6 +72,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("ReactPolicy");
 
 app.UseHttpsRedirection();
 

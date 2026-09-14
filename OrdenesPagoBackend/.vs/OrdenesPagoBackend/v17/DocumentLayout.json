@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|c:\\users\\naye_\\desktop\\prueba-tecnica-redcol\\ordenespagobackend\\ordenespagobackend\\business\\ordenbusinesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|solutionrelative:ordenespagobackend\\business\\ordenbusinesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|c:\\users\\naye_\\desktop\\prueba-tecnica-redcol\\ordenespagobackend\\ordenespagobackend\\business\\validator\\ordenvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|solutionrelative:ordenespagobackend\\business\\validator\\ordenvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|c:\\users\\naye_\\desktop\\prueba-tecnica-redcol\\ordenespagobackend\\ordenespagobackend\\business\\request\\ordenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|solutionrelative:ordenespagobackend\\business\\request\\ordenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|c:\\users\\naye_\\desktop\\prueba-tecnica-redcol\\ordenespagobackend\\ordenespagobackend\\business\\models\\ordendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|solutionrelative:ordenespagobackend\\business\\models\\ordendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|c:\\users\\naye_\\desktop\\prueba-tecnica-redcol\\ordenespagobackend\\ordenespagobackend\\business\\models\\detalleordendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|solutionrelative:ordenespagobackend\\business\\models\\detalleordendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|c:\\users\\naye_\\desktop\\prueba-tecnica-redcol\\ordenespagobackend\\ordenespagobackend\\business\\request\\detalleordenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|solutionrelative:ordenespagobackend\\business\\request\\detalleordenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|c:\\users\\naye_\\desktop\\prueba-tecnica-redcol\\ordenespagobackend\\ordenespagobackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|solutionrelative:ordenespagobackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|c:\\users\\naye_\\desktop\\prueba-tecnica-redcol\\ordenespagobackend\\ordenespagobackend\\business\\validator\\editarestadoordenvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|solutionrelative:ordenespagobackend\\business\\validator\\editarestadoordenvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|c:\\users\\naye_\\desktop\\prueba-tecnica-redcol\\ordenespagobackend\\ordenespagobackend\\business\\request\\estadoordenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|solutionrelative:ordenespagobackend\\business\\request\\estadoordenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|c:\\users\\naye_\\desktop\\prueba-tecnica-redcol\\ordenespagobackend\\ordenespagobackend\\controllers\\ordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|solutionrelative:ordenespagobackend\\controllers\\ordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DB090EA-45C0-4BEB-B054-698CEEE02D74}|OrdenesPagoBackend\\OrdenesPagoBackend.csproj|c:\\users\\naye_\\desktop\\prueba-tecnica-redcol\\ordenespagobackend\\ordenespagobackend\\business\\clientebusinesslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,24 +138,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrdenDto.cs",
+              "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Models\\OrdenDto.cs",
+              "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\Models\\OrdenDto.cs",
+              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Models\\OrdenDto.cs",
+              "RelativeToolTip": "OrdenesPagoBackend\\Business\\Models\\OrdenDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T23:04:15.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OrdenBusinessLogic.cs",
+              "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\OrdenBusinessLogic.cs",
+              "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\OrdenBusinessLogic.cs",
+              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\OrdenBusinessLogic.cs",
+              "RelativeToolTip": "OrdenesPagoBackend\\Business\\OrdenBusinessLogic.cs",
+              "ViewState": "AgIAANIAAAAAAAAAAAAwwOEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T16:48:40.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "OrdenValidator.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Validator\\OrdenValidator.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\Validator\\OrdenValidator.cs",
               "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Validator\\OrdenValidator.cs",
               "RelativeToolTip": "OrdenesPagoBackend\\Business\\Validator\\OrdenValidator.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAApwEsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAqwIoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-13T14:48:38.114Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "OrdenRequest.cs",
+              "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Request\\OrdenRequest.cs",
+              "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\Request\\OrdenRequest.cs",
+              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Request\\OrdenRequest.cs",
+              "RelativeToolTip": "OrdenesPagoBackend\\Business\\Request\\OrdenRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T16:53:16.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DetalleOrdenDto.cs",
+              "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Models\\DetalleOrdenDto.cs",
+              "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\Models\\DetalleOrdenDto.cs",
+              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Models\\DetalleOrdenDto.cs",
+              "RelativeToolTip": "OrdenesPagoBackend\\Business\\Models\\DetalleOrdenDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T23:04:10.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DetalleOrdenRequest.cs",
+              "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Request\\DetalleOrdenRequest.cs",
+              "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\Request\\DetalleOrdenRequest.cs",
+              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Request\\DetalleOrdenRequest.cs",
+              "RelativeToolTip": "OrdenesPagoBackend\\Business\\Request\\DetalleOrdenRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T16:53:45.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Program.cs",
+              "RelativeDocumentMoniker": "OrdenesPagoBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Program.cs",
+              "RelativeToolTip": "OrdenesPagoBackend\\Program.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAADsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T15:27:48.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EstadoOrdenRequest.cs",
+              "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Request\\EstadoOrdenRequest.cs",
+              "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\Request\\EstadoOrdenRequest.cs",
+              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Request\\EstadoOrdenRequest.cs",
+              "RelativeToolTip": "OrdenesPagoBackend\\Business\\Request\\EstadoOrdenRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T16:53:38.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrdenController.cs",
+              "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Controllers\\OrdenController.cs",
+              "RelativeDocumentMoniker": "OrdenesPagoBackend\\Controllers\\OrdenController.cs",
+              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Controllers\\OrdenController.cs",
+              "RelativeToolTip": "OrdenesPagoBackend\\Controllers\\OrdenController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwDMAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T15:34:20.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditarEstadoOrdenValidator.cs",
+              "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Validator\\EditarEstadoOrdenValidator.cs",
+              "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\Validator\\EditarEstadoOrdenValidator.cs",
+              "ToolTip": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Validator\\EditarEstadoOrdenValidator.cs",
+              "RelativeToolTip": "OrdenesPagoBackend\\Business\\Validator\\EditarEstadoOrdenValidator.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAswC0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T18:37:04.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ClienteBusinessLogic.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\ClienteBusinessLogic.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\ClienteBusinessLogic.cs",
@@ -127,12 +280,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Business\\ClienteBusinessLogic.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T00:52:42.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T00:52:42.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "IOrdenRepository.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Interfaces\\IOrdenRepository.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Interfaces\\IOrdenRepository.cs",
@@ -140,12 +292,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Interfaces\\IOrdenRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T02:23:49.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T02:23:49.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "RepositoryContext.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Data\\RepositoryContext.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Data\\RepositoryContext.cs",
@@ -153,12 +304,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Data\\RepositoryContext.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAAwwGoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:23:35.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:23:35.308Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "RepositoryWrapper.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Repositories\\RepositoryWrapper.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Repositories\\RepositoryWrapper.cs",
@@ -166,12 +316,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Repositories\\RepositoryWrapper.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAuwFkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:52:07.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:52:07.797Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "IRepositoryWrapper.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Interfaces\\IRepositoryWrapper.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Interfaces\\IRepositoryWrapper.cs",
@@ -179,12 +328,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Interfaces\\IRepositoryWrapper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T02:23:13.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T02:23:13.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "RepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Repositories\\RepositoryBase.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Repositories\\RepositoryBase.cs",
@@ -192,12 +340,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Repositories\\RepositoryBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:51:50.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:51:50.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "OrdenRepository.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Repositories\\OrdenRepository.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Repositories\\OrdenRepository.cs",
@@ -205,12 +352,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Repositories\\OrdenRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:52:57.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:52:57.815Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "Response.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Response.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\Response.cs",
@@ -218,12 +364,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Business\\Response.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T02:11:36.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T02:11:36.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "IRepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Interfaces\\IRepositoryBase.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Interfaces\\IRepositoryBase.cs",
@@ -231,12 +376,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Interfaces\\IRepositoryBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:46:07.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:46:07.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "DetalleOrden.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Data\\Entities\\DetalleOrden.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Data\\Entities\\DetalleOrden.cs",
@@ -244,12 +388,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Data\\Entities\\DetalleOrden.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:18:44.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:18:44.126Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "ClienteDto.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Models\\ClienteDto.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\Models\\ClienteDto.cs",
@@ -257,12 +400,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Business\\Models\\ClienteDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T00:29:28.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T00:29:28.558Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "ProductoDto.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Business\\Models\\ProductoDto.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Business\\Models\\ProductoDto.cs",
@@ -270,12 +412,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Business\\Models\\ProductoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T00:29:36.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T00:29:36.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "Producto.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Data\\Entities\\Producto.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Data\\Entities\\Producto.cs",
@@ -283,12 +424,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Data\\Entities\\Producto.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAiwAcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:18:52.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:18:52.685Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Data\\Entities\\Cliente.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Data\\Entities\\Cliente.cs",
@@ -296,12 +436,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Data\\Entities\\Cliente.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:18:42.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:18:42.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "ClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Repositories\\ClienteRepository.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Repositories\\ClienteRepository.cs",
@@ -309,12 +448,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Repositories\\ClienteRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:52:32.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:52:32.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "DetalleOrdenRepository.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Repositories\\DetalleOrdenRepository.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Repositories\\DetalleOrdenRepository.cs",
@@ -322,12 +460,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Repositories\\DetalleOrdenRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:53:12.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:53:12.04Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 26,
               "Title": "ProductoRepository.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Repositories\\ProductoRepository.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Repositories\\ProductoRepository.cs",
@@ -335,12 +472,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Repositories\\ProductoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:52:48.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:52:48.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 27,
               "Title": "IClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Interfaces\\IClienteRepository.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Interfaces\\IClienteRepository.cs",
@@ -348,12 +484,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Interfaces\\IClienteRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:45:08.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:45:08.475Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 29,
               "Title": "IDetalleOrdenRepository.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Interfaces\\IDetalleOrdenRepository.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Interfaces\\IDetalleOrdenRepository.cs",
@@ -361,12 +496,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Interfaces\\IDetalleOrdenRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:49:06.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:49:06.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 28,
               "Title": "IProductoRepository.cs",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\Interfaces\\IProductoRepository.cs",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\Interfaces\\IProductoRepository.cs",
@@ -374,12 +508,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\Interfaces\\IProductoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T23:45:20.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:45:20.43Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\appsettings.Development.json",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\appsettings.Development.json",
@@ -387,12 +520,11 @@
               "RelativeToolTip": "OrdenesPagoBackend\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-12T23:08:10.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T23:08:10.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 31,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\naye_\\Desktop\\PRUEBA-TECNICA-REDCOL\\OrdenesPagoBackend\\OrdenesPagoBackend\\appsettings.json",
               "RelativeDocumentMoniker": "OrdenesPagoBackend\\appsettings.json",
@@ -400,8 +532,7 @@
               "RelativeToolTip": "OrdenesPagoBackend\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-12T22:21:18.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T22:21:18.408Z"
             }
           ]
         }

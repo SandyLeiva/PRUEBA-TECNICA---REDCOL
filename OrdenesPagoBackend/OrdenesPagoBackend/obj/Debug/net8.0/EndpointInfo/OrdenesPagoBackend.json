@@ -95,15 +95,27 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "estado",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoOrdenRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoOrdenRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoOrdenRequest"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -179,6 +191,16 @@
           "precio": {
             "type": "number",
             "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoOrdenRequest": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

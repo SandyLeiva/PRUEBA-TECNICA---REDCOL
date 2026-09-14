@@ -12,14 +12,17 @@ namespace OrdenesPagoBackend.Business
     {
         private readonly IRepositoryWrapper _repository;
         private readonly OrdenValidator _ordenValidator;
+        private readonly EditarEstadoOrdenValidator _estadoOrdenValidator;
 
 
         public OrdenBusinessLogic(
             IRepositoryWrapper repository,
-            OrdenValidator ordenValidator)
+            OrdenValidator ordenValidator,
+            EditarEstadoOrdenValidator estadoOrdenValidator)
         {
             _repository = repository;
             _ordenValidator = ordenValidator;
+            _estadoOrdenValidator = estadoOrdenValidator;
         }
 
         public Response<List<OrdenDto>> ObtenerOrdenes()
@@ -95,7 +98,7 @@ namespace OrdenesPagoBackend.Business
                 {
                     Status = 404,
                     Message = "La orden no existe",
-                    Data = new OrdenDto(),
+                    Data = null,
                     Details = "No existe registro"
                 };
             }
@@ -121,7 +124,6 @@ namespace OrdenesPagoBackend.Business
             return total;
         }
 
-
         public Response<OrdenDto?> RegistrarOrden(OrdenRequest ordenRequest)
         {
             using var transaction = _repository.BeginTransaction();
@@ -138,44 +140,54 @@ namespace OrdenesPagoBackend.Business
 
                 var cliente = _repository.Cliente
                     .FindByCondition(c => c.IdCliente == ordenRequest.IdCliente)
-                    .FirstOrDefault();
+                    .First();
 
-                DateTime fecha = DateTime.ParseExact(
+                var fecha = DateTime.ParseExact(
                     ordenRequest.Fecha,
                     "yyyy-MM-ddTHH:mm:ss",
-                    CultureInfo.InvariantCulture);
+                    CultureInfo.InvariantCulture
+                );
 
-                var orden = new Orden();
-
-                orden.IdCliente = ordenRequest.IdCliente;
-                orden.Fecha = fecha;
-                orden.Total = CalcularTotalOrden(ordenRequest.DetalleOrdenRequest);
-                orden.Estado = ordenRequest.Estado;
-                orden.FechaRegistro = DateTime.Now;
-                orden.FechaActualizacion = DateTime.Now;
+                var orden = new Orden
+                {
+                    IdCliente = ordenRequest.IdCliente,
+                    Fecha = fecha,
+                    Total = CalcularTotalOrden(
+                        ordenRequest.DetalleOrdenRequest
+                    ),
+                    Estado = ordenRequest.Estado,
+                    FechaRegistro = DateTime.Now,
+                    FechaActualizacion = DateTime.Now
+                };
 
                 _repository.Orden.Create(orden);
                 _repository.save();
-
-                int idOrden = orden.IdOrden;
 
                 var detallesDto = new List<DetalleOrdenDto>();
 
                 foreach (var detalleRequest in ordenRequest.DetalleOrdenRequest)
                 {
                     var producto = _repository.Producto
-                        .FindByCondition(p => p.IdProducto == detalleRequest.IdProducto)
-                        .FirstOrDefault();
+                        .FindByCondition(
+                            p => p.IdProducto == detalleRequest.IdProducto
+                        )
+                        .First();
 
-                    var detalle = new DetalleOrden();
+                    producto.Stock -= detalleRequest.Cantidad;
 
-                    detalle.IdOrden = idOrden;
-                    detalle.IdProducto = detalleRequest.IdProducto;
-                    detalle.NombreProducto = producto!.Nombre ?? "";
-                    detalle.Cantidad = detalleRequest.Cantidad;
-                    detalle.Precio = detalleRequest.Precio;
-                    detalle.Subtotal =
-                        detalleRequest.Cantidad * detalleRequest.Precio;
+                    _repository.Producto.Update(producto);
+
+                    var detalle = new DetalleOrden
+                    {
+                        IdOrden = orden.IdOrden,
+                        IdProducto = producto.IdProducto,
+                        NombreProducto = producto.Nombre ?? "",
+                        Cantidad = detalleRequest.Cantidad,
+                        Precio = detalleRequest.Precio,
+                        Subtotal =
+                            detalleRequest.Cantidad *
+                            detalleRequest.Precio
+                    };
 
                     _repository.DetalleOrden.Create(detalle);
                     _repository.save();
@@ -193,7 +205,7 @@ namespace OrdenesPagoBackend.Business
                 var ordenDto = new OrdenDto
                 {
                     IdOrden = orden.IdOrden,
-                    Documento = cliente!.Documento,
+                    Documento = cliente.Documento,
                     ClienteNombre = cliente.Nombre,
                     Email = cliente.Email ?? "",
                     Fecha = orden.Fecha,
@@ -226,31 +238,28 @@ namespace OrdenesPagoBackend.Business
             }
         }
 
-        public Response<OrdenDto> EditarEstadoOrden(int idOrden, string estado)
+        public Response<OrdenDto> EditarEstadoOrden(int idOrden,EstadoOrdenRequest estadoOrdenRequest)
         {
+
+            var validacion = _estadoOrdenValidator.ValidarCambioEstadoOrden(idOrden, estadoOrdenRequest);
+
+            if (validacion != null)
+            {
+                return validacion;
+            }
 
             var orden = _repository.Orden
                 .FindByCondition(o => o.IdOrden == idOrden)
+                .Include(o => o.IdClienteNavigation)
                 .FirstOrDefault();
 
-            if (orden == null)
-            {
-                return new Response<OrdenDto>
-                {
-                    Status = 404,
-                    Message = "La orden no existe",
-                    Data = new OrdenDto(),
-                    Details = "No existe registro"
-                };
-            }
-
-            orden.Estado = estado;
+            orden.Estado = estadoOrdenRequest.Estado;
             orden.FechaActualizacion = DateTime.Now;
 
             _repository.Orden.Update(orden);
             _repository.save();
 
-            var ordenDto = new OrdenDto()
+            var ordenDto = new OrdenDto
             {
                 IdOrden = orden.IdOrden,
                 Documento = orden.IdClienteNavigation.Documento,
